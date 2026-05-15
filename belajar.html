@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Belajar - Clash Of Ecosystem</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lms-container { display: flex; min-height: 100vh; margin-top: 20px; }
+        .sidebar { width: 250px; background: #fff; padding: 20px; border-right: 1px solid #ddd; }
+        .main-content { flex: 1; padding: 40px; background: #fff; border-radius: 10px; margin-left: 20px; }
+        .bab-list { list-style: none; }
+        .bab-item { margin-bottom: 15px; }
+        .bab-item a { text-decoration: none; color: var(--text-primary); font-weight: bold; }
+        .subbab-list { margin-left: 15px; font-size: 0.9rem; list-style: circle; }
+        @media (max-width: 768px) {
+            .lms-container { flex-direction: column; }
+            .sidebar { width: 100%; border-right: none; border-bottom: 1px solid #ddd; }
+            .main-content { margin-left: 0; margin-top: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header style="padding: 20px 0;">
+            <a href="index.html" style="text-decoration: none;">← Kembali ke Beranda</a>
+            <h1 style="margin-top: 10px;">[JUDUL_PEMBELAJARAN]</h1>
+            <p>[DESKRIPSI_PEMBELAJARAN]</p>
+        </header>
+
+        <div class="lms-container">
+            <!-- SIDEBAR DAFTAR ISI -->
+            <aside class="sidebar">
+                <ul class="bab-list">
+                    <li class="bab-item">
+                        <a href="#">Bab 1: [JUDUL_BAB_1]</a>
+                        <ul class="subbab-list">
+                            <li>[JUDUL_SUBBAB_1_1]</li>
+                            <li>[JUDUL_SUBBAB_1_2]</li>
+                        </ul>
+                    </li>
+                    <li class="bab-item">
+                        <a href="#">Bab 2: [JUDUL_BAB_2]</a>
+                        <ul class="subbab-list">
+                            <li>[JUDUL_SUBBAB_2_1]</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- KONTEN UTAMA -->
+            <main class="main-content">
+                <h2>[JUDUL_BAB_1]</h2>
+                <p style="margin: 20px 0;">[RINGKASAN_BAB_1]</p>
+                
+                <!-- Placeholder Gambar -->
+                <div style="background: #eee; padding: 20px; text-align: center; border-radius: 10px;">
+                    <img src="https://i.ibb.co.com/v4pJFg4L/NAVIGASI-MATERI.png" alt="NAVIGASI MATERI" style="max-width: 100%;">
+                    <p><small>[URL_GAMBAR_MATERI]</small></p>
+                </div>
+
+                <!-- Placeholder Video/Game -->
+                <div style="margin-top: 30px;">
+                    <h3>Interaksi & Game</h3>
+                    <div style="width: 100%; height: 300px; background: #ddd; display: flex; align-items: center; justify-content: center;">
+                        <p>[LINK_EMBED_VIDEO_ATAU_GAME_DISINI]</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
